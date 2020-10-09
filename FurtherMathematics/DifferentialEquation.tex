@@ -5,9 +5,9 @@
 
     $y' = f(ax + by + c)$型$\colon$令$u = ax +by + c \Rightarrow u' = a + bf'(u) \Rightarrow \frac{\mathrm{d}x}{a + bf(u)} = \mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}x}{a + bf(u)}} = \int\mathrm{d}x$
 
-    $y' = f(\frac{y}{x})$型$\colon$令$\frac{y}{x} = u \Rightarrow y = ux \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = u + \frac{\mathrm{d}u}{\mathrm{d}x}$原方程$y\frac{\mathrm{d}u}{\mathrm{d}y} + u = f(u) \Rightarrow \frac{\mathrm{d}u}{f(u)-u} = \frac{\mathrm{d}x}{x} \Rightarrow \int{\frac{\mathrm{d}u}{f(u)-u}} = \int{\frac{\mathrm{d}x}{x}}$
+    $y' = f(\frac{y}{x})$型$\colon$令$\frac{y}{x} = u \Rightarrow y = ux \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = u + x\frac{\mathrm{d}u}{\mathrm{d}x}$原方程$x\frac{\mathrm{d}u}{\mathrm{d}x} + u = f(u) \Rightarrow \frac{\mathrm{d}u}{f(u)-u} = \frac{\mathrm{d}x}{x} \Rightarrow \int{\frac{\mathrm{d}u}{f(u)-u}} = \int{\frac{\mathrm{d}x}{x}}$
 
-    $\frac{1}{y'} = f(\frac{x}{y})$型$\colon$令$\frac{x}{y} = u \Rightarrow x = uy \Rightarrow \frac{\mathrm{d}x}{\mathrm{d}y} = u + \frac{\mathrm{d}u}{\mathrm{d}y}$原方程$y\frac{\mathrm{d}u}{\mathrm{d}y} + u = f(u) \Rightarrow \frac{\mathrm{d}u}{f(u)-u} = \frac{\mathrm{d}y}{y} \Rightarrow \int{\frac{\mathrm{d}u}{f(u)-u}} = \int{\frac{\mathrm{d}y}{y}}$
+    $\frac{1}{y'} = f(\frac{x}{y})$型$\colon$令$\frac{x}{y} = u \Rightarrow x = uy \Rightarrow \frac{\mathrm{d}x}{\mathrm{d}y} = u + y\frac{\mathrm{d}u}{\mathrm{d}y}$原方程$y\frac{\mathrm{d}u}{\mathrm{d}y} + u = f(u) \Rightarrow \frac{\mathrm{d}u}{f(u)-u} = \frac{\mathrm{d}y}{y} \Rightarrow \int{\frac{\mathrm{d}u}{f(u)-u}} = \int{\frac{\mathrm{d}y}{y}}$
 
     $y' + p(x)y = q(x)$型$\colon$方程两边同时乘上$e^{\int{p(x)\mathrm{d}x}} \Rightarrow e^{\int{p(x)\mathrm{d}x}} \cdot y' + e^{\int{p(x)\mathrm{d}x}}p(x) \cdot y = e^{\int{p(x)\mathrm{d}x}} \cdot q(x) \Rightarrow \left[e^{\int{p(x)\mathrm{d}x}} \cdot y\right]' = e^{\int{p(x)\mathrm{d}x}} \cdot q(x) \Rightarrow e^{\int{p(x)\mathrm{d}x}} \cdot y = \int{e^{\int{p(x)\mathrm{d}x}} \cdot q(x)}\mathrm{d}x + C$
 
