@@ -1,8 +1,7 @@
 \section{微分方程}
 
 \begin{spacing}{\hangju}
-    \LARGE
-    $ y' = f(x) \cdot g(x)$型$\colon \Rightarrow \frac{\mathrm{d}x}{g(y)} = f(x)\mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}x}{g(y)}} = \int{f(x)}\mathrm{d}x $
+    $ y' = f(x) \cdot g(y)$型$\colon \Rightarrow \frac{\mathrm{d}x}{g(y)} = f(x)\mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}x}{g(y)}} = \int{f(x)}\mathrm{d}x $
 
     $y' = f(ax + by + c)$型$\colon$令$u = ax +by + c \Rightarrow u' = a + bf'(u) \Rightarrow \frac{\mathrm{d}x}{a + bf(u)} = \mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}x}{a + bf(u)}} = \int\mathrm{d}x$
 
@@ -12,20 +11,20 @@
 
     $y' + p(x)y = q(x)$型$\colon$方程两边同时乘上$e^{\int{p(x)\mathrm{d}x}} \Rightarrow e^{\int{p(x)\mathrm{d}x}} \cdot y' + e^{\int{p(x)\mathrm{d}x}}p(x) \cdot y = e^{\int{p(x)\mathrm{d}x}} \cdot q(x) \Rightarrow \left[e^{\int{p(x)\mathrm{d}x}} \cdot y\right]' = e^{\int{p(x)\mathrm{d}x}} \cdot q(x) \Rightarrow e^{\int{p(x)\mathrm{d}x}} \cdot y = \int{e^{\int{p(x)\mathrm{d}x}} \cdot q(x)}\mathrm{d}x + C$
 
-    \noindent 得$y = e^{-\int{p(x)\mathrm{d}x}}\left[\int{e^{\int{p(x)\mathrm{d}x}} \cdot p(x)} + C\right]$
+    \noindent 得$y = e^{-\int{p(x)\mathrm{d}x}}\left[\int{e^{\int{p(x)\mathrm{d}x}} \cdot q(x)\mathrm{d}x} + C\right]$
 
     $y' + p(x)y = q(x)y^n$型$\colon$先变形到$y^{-n} \cdot y' + p(x)y^{1-n} = q(x) \stackrel{z = y^{1-n}}{\Longrightarrow}$得$\frac{\mathrm{d}z}{\mathrm{d}x} = (1 - n)y^{-n}\frac{\mathrm{d}y}{\mathrm{d}x}$，则$\frac{1}{1 - n}\frac{\mathrm{d}z}{\mathrm{d}x} + p(x)z = q(x)$
 
     $y''=f(x, y')$型$\colon$令$y' = p \Rightarrow y'' = p' \Rightarrow \frac{\mathrm{d}p}{\mathrm{d}x} = f(x, p)$
     若解得$p = \varphi(x, C_1)$即$y' = \varphi(x, C_1)$则通解为$y = \int{\varphi(x, C_1)\mathrm{d}x} +C_2$
 
-    $y''=f(y', y'')$型$\colon$令$y' = p \Rightarrow y'' = \frac{\mathrm{}{d}p}{\mathrm{d}x} = \frac{\mathrm{d}p}{\mathrm{d}y} \cdot \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}p}{\mathrm{d}y}p$得$p\frac{\mathrm{d}p}{\mathrm{d}y} = f(y, p)$若解得$p = \varphi(y, C_1)$则由$p = \frac{\mathrm{d}y}{\mathrm{d}x} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \varphi(y, C_1)$分离变量得$\frac{\mathrm{d}y}{\varphi(y, C_1)} = \mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}y}{\varphi(y, C_1)}} = \int\mathrm{d}x$
+    $y''=f(y', y'')$型$\colon$令$y' = p \Rightarrow y'' = \frac{\mathrm{}{d}p}{\mathrm{d}x} = \frac{\mathrm{d}p}{\mathrm{d}y} \cdot \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}p}{\mathrm{d}y}p$得$p\frac{\mathrm{d}p}{\mathrm{d}y} = f(y, p)$若解得$p = \varphi(y, C_1)$则由$p = \frac{\mathrm{d}y}{\mathrm{d}x} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \varphi(y, C_1)$分离变量得$\frac{\mathrm{d}y}{\varphi(y, C_1)} = \mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}y}{\varphi(y, C_1)}} = x + C_2$
 
     $y'' + py' + qy = f(x)$型$\colon$
 
     $\left\{
         \begin{array}{l}
-            \lambda^2 + p\lambda + q = 0 \Rightarrow \lambda_1, \lambda_2 \mbox{写出齐次方程的通解}\\
+            \lambda^2 + p\lambda + q = 0 \Rightarrow \lambda_1, \lambda_2 \Rightarrow \mbox{写出齐次方程的通解}\\
             \mbox{设特解}y'' \Rightarrow \mbox{回代，求待定系数} \Rightarrow \mbox{特解} \\
         \end{array}
     \right.
@@ -37,9 +36,9 @@
         \begin{array}{l}
             \mbox{写}\lambda^2 + px + q = 0 \Rightarrow \mbox{齐次方程的通解} \\
             \begin{array}{l}
-                y'' + py' + q = f_1(x) \mbox{写特解}y'_1 \\
-                y'' + py' + qy = f_2(x) \mbox{写特解}y'_2 \\
-            \end{array} \Rightarrow \mbox{通解}
+                y'' + py' + q = f_1(x) \mbox{写特解}y_{1}^{*} \\
+                y'' + py' + qy = f_2(x) \mbox{写特解}y_{2}^{*} \\
+            \end{array} \Rightarrow \mbox{故}y_{1}^{*} + y_{2}^{*}\mbox{为特解}
         \end{array}
-    \right. \Rightarrow 通解$
+    \right. \Rightarrow \mbox{通解}$
 \end{spacing}
