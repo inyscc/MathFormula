@@ -13,16 +13,16 @@
 
     \noindent 得$y = e^{-\int{p(x)\mathrm{d}x}}\left[\int{e^{\int{p(x)\mathrm{d}x}} \cdot q(x)\mathrm{d}x} + C\right]$
 
-    $y' + p(x)y = q(x)y^n$型$\colon$先变形到$y^{-n} \cdot y' + p(x)y^{1-n} = q(x) \stackrel{z = y^{1-n}}{\Longrightarrow}$得$\frac{\mathrm{d}z}{\mathrm{d}x} = (1 - n)y^{-n}\frac{\mathrm{d}y}{\mathrm{d}x}$，则$\frac{1}{1 - n}\frac{\mathrm{d}z}{\mathrm{d}x} + p(x)z = q(x)$
+    \noindent $y' + p(x)y = q(x)y^n$型$\colon$先变形到$y^{-n} \cdot y' + p(x)y^{1-n} = q(x) \stackrel{z = y^{1-n}}{\Longrightarrow}$得$\frac{\mathrm{d}z}{\mathrm{d}x} = (1 - n)y^{-n}\frac{\mathrm{d}y}{\mathrm{d}x}$，则$\frac{1}{1 - n}\frac{\mathrm{d}z}{\mathrm{d}x} + p(x)z = q(x)$
 
-    $y''=f(x, y')$型$\colon$令$y' = p \Rightarrow y'' = p' \Rightarrow \frac{\mathrm{d}p}{\mathrm{d}x} = f(x, p)$
+    \noindent $y''=f(x, y')$型$\colon$令$y' = p \Rightarrow y'' = p' \Rightarrow \frac{\mathrm{d}p}{\mathrm{d}x} = f(x, p)$
     若解得$p = \varphi(x, C_1)$即$y' = \varphi(x, C_1)$则通解为$y = \int{\varphi(x, C_1)\mathrm{d}x} +C_2$
 
-    $y''=f(y', y'')$型$\colon$令$y' = p \Rightarrow y'' = \frac{\mathrm{}{d}p}{\mathrm{d}x} = \frac{\mathrm{d}p}{\mathrm{d}y} \cdot \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}p}{\mathrm{d}y}p$得$p\frac{\mathrm{d}p}{\mathrm{d}y} = f(y, p)$若解得$p = \varphi(y, C_1)$则由$p = \frac{\mathrm{d}y}{\mathrm{d}x} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \varphi(y, C_1)$分离变量得$\frac{\mathrm{d}y}{\varphi(y, C_1)} = \mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}y}{\varphi(y, C_1)}} = x + C_2$
+    \noindent $y''=f(y', y'')$型$\colon$令$y' = p \Rightarrow y'' = \frac{\mathrm{}{d}p}{\mathrm{d}x} = \frac{\mathrm{d}p}{\mathrm{d}y} \cdot \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}p}{\mathrm{d}y}p$得$p\frac{\mathrm{d}p}{\mathrm{d}y} = f(y, p)$若解得$p = \varphi(y, C_1)$则由$p = \frac{\mathrm{d}y}{\mathrm{d}x} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \varphi(y, C_1)$分离变量得$\frac{\mathrm{d}y}{\varphi(y, C_1)} = \mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}y}{\varphi(y, C_1)}} = x + C_2$
 
-    $y'' + py' + qy = f(x)$型$\colon$
+    \noindent $y'' + py' + qy = f(x)$型$\colon$
 
-    $\left\{
+    \noindent $\left\{
         \begin{array}{l}
             \lambda^2 + p\lambda + q = 0 \Rightarrow \lambda_1, \lambda_2 \Rightarrow \mbox{写出齐次方程的通解}\\
             \mbox{设特解}y'' \Rightarrow \mbox{回代，求待定系数} \Rightarrow \mbox{特解} \\
@@ -30,9 +30,9 @@
     \right.
     \Rightarrow \mbox{写出通解}$
 
-    $y'' + py' + qy = f_1(x) + f_2(x)$型$\colon$
+    \noindent $y'' + py' + qy = f_1(x) + f_2(x)$型$\colon$
 
-    $\left\{
+    \noindent $\left\{
         \begin{array}{l}
             \mbox{写}\lambda^2 + px + q = 0 \Rightarrow \mbox{齐次方程的通解} \\
             \begin{array}{l}
@@ -41,4 +41,28 @@
             \end{array} \Rightarrow \mbox{故}y_{1}^{*} + y_{2}^{*}\mbox{为特解}
         \end{array}
     \right. \Rightarrow \mbox{通解}$
+
+    \noindent $\mbox{(1)齐次方程的通解}$
+
+    \noindent $\begin{array}{ll}
+        p^2-4q > 0,\mbox{即} \lambda_1 \neq \lambda_2 & \mbox{通解为}y = C_1e^{\lambda_1x} + C_2e^{\lambda_2x}\\
+        p^2-4q = 0,\mbox{即} \lambda_1 = \lambda_2 = \lambda & \mbox{通解为}y = (C_1 + C_2x)e^{\lambda x}\\
+        p^2-4q < 0,\mbox{共轭复根为}\alpha \pm \beta \mathrm{i} & \mbox{通解为}y = e^{\alpha x}(C_1\cos{\beta x} + C_2\sin{\beta x})\\
+    \end{array}$
+
+    \noindent $\mbox{(1)齐次方程的通解}$
+
+    \noindent $\ding{1} \mbox{自由项}f(x) = P_n(x)e^{ax}\mbox{时,特解}y^{*} = e^{ax}Q_n(x)x^k$
+
+    \noindent $\left\{\begin{array}{l}
+        e^{ax}\mbox{照抄}\\
+        Q_n(x)\mbox{为}x\mbox{的}n\mbox{次一般多项式}\\
+        k=\left\{
+        \begin{array}{ll}
+            0 & \alpha \neq \lambda_1,\alpha \neq \lambda_2\\
+            1 & \alpha \neq \lambda_1\mbox{或}\alpha \neq \lambda_2\\
+            2 & \alpha = \lambda_1 = \lambda_2\\
+        \end{array}
+        \right.\\
+    \end{array}\right.$
 \end{spacing}
