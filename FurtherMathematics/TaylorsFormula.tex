@@ -1,4 +1,4 @@
-\section{泰勒展开式}
+\section{泰勒及其展开式}
 
 \begin{multicols}{2}
     \begin{spacing}{\hangju}
@@ -23,3 +23,14 @@
         \noindent $(1 + x)^\alpha = 1 + \alpha x + \frac{\alpha(\alpha - 1)}{2}x^2$
     \end{spacing}
 \end{multicols}
+
+\begin{equation*}%加*表示不对公式编号
+    \begin{split}
+        \setlength{\abovedisplayskip}{-3pt}
+        f(x) = & f(x_0) + f'(x_0)(x-x_0) + \frac{f''(x_0)}{2} x^2 \\
+               & + \cdots + \frac{f^{n}x_0}{n!} (x-x_0)^n + \frac{f^{n+1}(\theta)}{(n+1)!}(x - x_0)^{n+1}
+        \\
+        f(x) = & f(0) + f'(0)(x) + \frac{f''(0)}{2} x^2 + \cdots + \\
+               & \frac{f^{n}(0)}{n!} (x)^n + \frac{f^{n+1}(\theta)}{(n+1)!}x^{n+1}
+    \end{split}
+\end{equation*}
