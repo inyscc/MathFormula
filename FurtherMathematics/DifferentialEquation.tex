@@ -1,24 +1,24 @@
 \section{微分方程}
 
 \begin{spacing}{\hangju}
-    $ y' = f(x) \cdot g(y)$型$\colon \Rightarrow \frac{\mathrm{d}x}{g(y)} = f(x)\mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}x}{g(y)}} = \int{f(x)}\mathrm{d}x $
+    $ y' = f(x) \cdot g(y)$型$\displaystyle \colon \Rightarrow \frac{\mathrm{d}y}{g(y)} = f(x)\mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}y}{g(y)}} = \int{f(x)}\mathrm{d}x $
 
-    $y' = f(ax + by + c)$型$\colon$令$u = ax +by + c \Rightarrow u' = a + bf'(u) \Rightarrow \frac{\mathrm{d}x}{a + bf(u)} = \mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}x}{a + bf(u)}} = \int\mathrm{d}x$
+    $y' = f(ax + by + c)$型$\colon$令$\displaystyle u = ax +by + c \Rightarrow u' = a + bf'(u) \Rightarrow \frac{\mathrm{d}x}{a + bf(u)} = \mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}x}{a + bf(u)}} = \int\mathrm{d}x$
 
-    $y' = f(\frac{y}{x})$型$\colon$令$\frac{y}{x} = u \Rightarrow y = ux \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = u + x\frac{\mathrm{d}u}{\mathrm{d}x}$原方程$x\frac{\mathrm{d}u}{\mathrm{d}x} + u = f(u) \Rightarrow \frac{\mathrm{d}u}{f(u)-u} = \frac{\mathrm{d}x}{x} \Rightarrow \int{\frac{\mathrm{d}u}{f(u)-u}} = \int{\frac{\mathrm{d}x}{x}}$
+    $y' = f(\frac{y}{x})$型$\colon$令$\frac{y}{x} = u \Rightarrow y = ux \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = u + x\frac{\mathrm{d}u}{\mathrm{d}x}$原方程$\displaystyle x\frac{\mathrm{d}u}{\mathrm{d}x} + u = f(u) \Rightarrow \frac{\mathrm{d}u}{f(u)-u} = \frac{\mathrm{d}x}{x} \Rightarrow \int{\frac{\mathrm{d}u}{f(u)-u}} = \int{\frac{\mathrm{d}x}{x}}$
 
-    $\frac{1}{y'} = f(\frac{x}{y})$型$\colon$令$\frac{x}{y} = u \Rightarrow x = uy \Rightarrow \frac{\mathrm{d}x}{\mathrm{d}y} = u + y\frac{\mathrm{d}u}{\mathrm{d}y}$原方程$y\frac{\mathrm{d}u}{\mathrm{d}y} + u = f(u) \Rightarrow \frac{\mathrm{d}u}{f(u)-u} = \frac{\mathrm{d}y}{y} \Rightarrow \int{\frac{\mathrm{d}u}{f(u)-u}} = \int{\frac{\mathrm{d}y}{y}}$
+    $\frac{1}{y'} = f(\frac{x}{y})$型$\colon$令$\frac{x}{y} = u \Rightarrow x = uy \Rightarrow \frac{\mathrm{d}x}{\mathrm{d}y} = u + y\frac{\mathrm{d}u}{\mathrm{d}y}$原方程$\displaystyle y\frac{\mathrm{d}u}{\mathrm{d}y} + u = f(u) \Rightarrow \frac{\mathrm{d}u}{f(u)-u} = \frac{\mathrm{d}y}{y} \Rightarrow \int{\frac{\mathrm{d}u}{f(u)-u}} = \int{\frac{\mathrm{d}y}{y}}$
 
-    $y' + p(x)y = q(x)$型$\colon$方程两边同时乘上$e^{\int{p(x)\mathrm{d}x}} \Rightarrow e^{\int{p(x)\mathrm{d}x}} \cdot y' + e^{\int{p(x)\mathrm{d}x}}p(x) \cdot y = e^{\int{p(x)\mathrm{d}x}} \cdot q(x) \Rightarrow \left[e^{\int{p(x)\mathrm{d}x}} \cdot y\right]' = e^{\int{p(x)\mathrm{d}x}} \cdot q(x) \Rightarrow e^{\int{p(x)\mathrm{d}x}} \cdot y = \int{e^{\int{p(x)\mathrm{d}x}} \cdot q(x)}\mathrm{d}x + C$
+    $y' + p(x)y = q(x)$型$\colon$方程两边同时乘上$\displaystyle e^{\int{p(x)\mathrm{d}x}} \Rightarrow e^{\int{p(x)\mathrm{d}x}} \cdot y' + e^{\int{p(x)\mathrm{d}x}}p(x) \cdot y = e^{\int{p(x)\mathrm{d}x}} \cdot q(x) \Rightarrow \left[e^{\int{p(x)\mathrm{d}x}} \cdot y\right]' = e^{\int{p(x)\mathrm{d}x}} \cdot q(x) \Rightarrow e^{\int{p(x)\mathrm{d}x}} \cdot y = \int{e^{\int{p(x)\mathrm{d}x}} \cdot q(x)}\mathrm{d}x + C$
 
-    \noindent 得$y = e^{-\int{p(x)\mathrm{d}x}}\left[\int{e^{\int{p(x)\mathrm{d}x}} \cdot q(x)\mathrm{d}x} + C\right]$
+    \noindent 得$\displaystyle y = e^{-\int{p(x)\mathrm{d}x}}\left[\int{e^{\int{p(x)\mathrm{d}x}} \cdot q(x)\mathrm{d}x} + C\right]$
 
-    \noindent $y' + p(x)y = q(x)y^n$型$\colon$先变形到$y^{-n} \cdot y' + p(x)y^{1-n} = q(x) \stackrel{z = y^{1-n}}{\Longrightarrow}$得$\frac{\mathrm{d}z}{\mathrm{d}x} = (1 - n)y^{-n}\frac{\mathrm{d}y}{\mathrm{d}x}$，则$\frac{1}{1 - n}\frac{\mathrm{d}z}{\mathrm{d}x} + p(x)z = q(x)$
+    \noindent $y' + p(x)y = q(x)y^n$型$\colon$先变形到$y^{-n} \cdot y' + p(x)y^{1-n} = q(x) \stackrel{z = y^{1-n}}{\Longrightarrow}$得$\frac{\mathrm{d}z}{\mathrm{d}x} = (1 - n)y^{-n}\frac{\mathrm{d}y}{\mathrm{d}x}$，则$\displaystyle \int \frac{1}{1 - n}\frac{\mathrm{d}z}{\mathrm{d}x} + p(x)z = q(x)$
 
     \noindent $y''=f(x, y')$型$\colon$令$y' = p \Rightarrow y'' = p' \Rightarrow \frac{\mathrm{d}p}{\mathrm{d}x} = f(x, p)$
-    若解得$p = \varphi(x, C_1)$即$y' = \varphi(x, C_1)$则通解为$y = \int{\varphi(x, C_1)\mathrm{d}x} +C_2$
+    若解得$p = \varphi(x, C_1)$即$y' = \varphi(x, C_1)$则通解为$\displaystyle y = \int{\varphi(x, C_1)\mathrm{d}x} +C_2$
 
-    \noindent $y''=f(y', y'')$型$\colon$令$y' = p \Rightarrow y'' = \frac{\mathrm{}{d}p}{\mathrm{d}x} = \frac{\mathrm{d}p}{\mathrm{d}y} \cdot \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}p}{\mathrm{d}y}p$得$p\frac{\mathrm{d}p}{\mathrm{d}y} = f(y, p)$若解得$p = \varphi(y, C_1)$则由$p = \frac{\mathrm{d}y}{\mathrm{d}x} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \varphi(y, C_1)$分离变量得$\frac{\mathrm{d}y}{\varphi(y, C_1)} = \mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}y}{\varphi(y, C_1)}} = x + C_2$
+    \noindent $y''=f(y', y'')$型$\colon$令$y' = p \Rightarrow y'' = \frac{\mathrm{}{d}p}{\mathrm{d}x} = \frac{\mathrm{d}p}{\mathrm{d}y} \cdot \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}p}{\mathrm{d}y}p$得$p\frac{\mathrm{d}p}{\mathrm{d}y} = f(y, p)$若解得$p = \varphi(y, C_1)$则由$p = \frac{\mathrm{d}y}{\mathrm{d}x} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \varphi(y, C_1)$分离变量得$\displaystyle \frac{\mathrm{d}y}{\varphi(y, C_1)} = \mathrm{d}x \Rightarrow \int{\frac{\mathrm{d}y}{\varphi(y, C_1)}} = x + C_2$
 
     \noindent $y'' + py' + qy = f(x)$型$\colon$
 
